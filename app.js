@@ -81,6 +81,11 @@ app.post("/new-entry", async (req, res) => {
 
   res.render("entry-confirm", { details: data });
 });
+
+app.get("/entry-confirm", (req, res) => {
+  res.render("entry-confirm", { details: data });
+});
+
 //Connect to Server
 app.listen(process.env.APP_PORT, () => {
   console.log(
