@@ -29,6 +29,11 @@ body {
   background-color: lightgoldenrodyellow;
 }
 
+#head > h1 {
+  display: flex;
+  justify-content: center;
+}
+
 #quote {
   grid-area: quote;
   background-color: lightcoral;
@@ -57,10 +62,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-self: center;
   padding: 1.8em;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
   border-radius: 0.9em;
-  width: 37em;
+  width: 80%;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -98,4 +104,41 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 1.5em;
+}
+
+@media only screen and (min-width: 375px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "head head"
+      "quote quote"
+      "entries entries"
+      "list list"
+      "foot foot";
+  }
+
+  #quote {
+    padding: 1.5em;
+  }
+
+  #entries > h3 {
+    margin: 0.5em 3.7em;
+    display: flex;
+    justify-content: center;
+  }
+
+  #entries > .btn {
+    background-color: paleturquoise;
+    border-radius: 0.2em;
+    padding: 0.5em 1em;
+    margin: 0.1em 4.2em;
+    width: 15em;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+  }
 }
