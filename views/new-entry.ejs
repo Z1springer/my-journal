@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Journal Entry</title>
+  </head>
+  <body>
+    <!-- TODO:  -->
+
+    <h1>Add To Your Journal</h1>
+    <form id="entry-form" method="post" action="/entry-confirm">
+      <fieldset>
+        <legend>How are you feeling?</legend>
+        <select id="feeling" name="feeling">
+          <option value="none">-</option>
+          <option value="angry">Angry</option>
+          <option value="anxious">Anxious</option>
+          <option value="confident">Confident</option>
+          <option value="content">Content</option>
+          <option value="happy">Happy</option>
+          <option value="sad">Sad</option>
+          <!-- List to be expanded at a later time -->
+        </select>
+      </fieldset>
+
+      <label for="new-entry">Type out Your Thoughs Here</label> <br />
+      <textarea rows="15" id="new-entry" name="new-entry"></textarea> <br />
+
+      <button type="submit">Confirm Entry</button>
+    </form>
+  </body>
+</html>
