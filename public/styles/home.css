@@ -1,45 +1,55 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-#container{
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "head head head head"
-        "quote quote quote list"
-        "quote quote quote list"
-        "entries entries entries list"
-        "entries entries entries list"
-        "foot foot foot foot"
-    ;
+#container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "head head head head"
+    "quote quote quote list"
+    "quote quote quote list"
+    "entries entries entries list"
+    "entries entries entries list"
+    "foot foot foot foot";
 }
 
-#head{
-    grid-area: head;
-    background-color: lightgoldenrodyellow;
+#head {
+  grid-area: head;
+  background-color: lightgoldenrodyellow;
 }
 
-#quote{
-    grid-area: quote;
-    background-color: lightcoral;
-
+#quote {
+  grid-area: quote;
+  background-color: lightcoral;
 }
 
-#list{
-    grid-area: list;
-    background-color: lightblue;
+#list {
+  grid-area: list;
+  background-color: lightblue;
 }
 
-#entries{
-    grid-area: entries;
-    background-color: lightgreen;
+#entries {
+  grid-area: entries;
+  background-color: lightgreen;
 }
 
-#foot{
-    grid-area: foot;
-    background-color: lightsalmon;
+#foot {
+  grid-area: foot;
+  background-color: lightsalmon;
+}
+
+.btn {
+  background-color: paleturquoise;
+  border: none;
+  border-radius: 0.2em;
+  color: black;
+  padding: 0.1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
 }
