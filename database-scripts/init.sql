@@ -4,8 +4,8 @@ USE journalEntries;
 
 CREATE TABLE entrys(
 	id INT PRIMARY KEY AUTO_INCREMENT,
-    author VARCHAR(255),
+    name VARCHAR(255),
     fealing VARCHAR(255),
-    content TEXT,
+    newEntry TEXT,
     timestamp DATETIME DEFAULT NOW()
 )

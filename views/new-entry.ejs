@@ -6,10 +6,16 @@
     <title>New Journal Entry</title>
   </head>
   <body>
-    <!-- TODO:  -->
+    <!-- 
+        TODO: Configure to make these entries private by having the user log in  
+    -->
 
     <h1>Add To Your Journal</h1>
     <form id="entry-form" method="post" action="/entry-confirm">
+      <label>
+        Name: <input type="text" name="name" value="<%= data.name %>"
+      </label>
+
       <fieldset>
         <legend>How are you feeling?</legend>
         <select id="feeling" name="feeling">
@@ -25,7 +31,7 @@
       </fieldset>
 
       <label for="new-entry">Type out Your Thoughs Here</label> <br />
-      <textarea rows="15" id="new-entry" name="new-entry"></textarea> <br />
+      <textarea rows="15" id="new-entry" name="newEntry"></textarea> <br />
 
       <button type="submit">Confirm Entry</button>
     </form>
