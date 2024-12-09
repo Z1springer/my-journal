@@ -3,7 +3,7 @@ const mariadb = require("mariadb");
 
 require("dotenv").config();
 
-const PORT = 3000;
+// const PORT = 3000;
 
 const app = express();
 
@@ -82,6 +82,8 @@ app.post("/new-entry", async (req, res) => {
   res.render("entry-confirm", { details: data });
 });
 //Connect to Server
-app.listen(PORT, () => {
-  console.log(`Server running on port http://localhost:${PORT}`);
+app.listen(process.env.APP_PORT, () => {
+  console.log(
+    `Server running on port http://localhost:${process.env.APP_PORT}`
+  );
 });
