@@ -1,0 +1,41 @@
+header{
+    background-color: lightseagreen;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "head    head    head    head"
+        "quote   quote   quote   list"
+        "quote   quote   quote   list"
+        "entries entries entries list"
+        "entries entries entries list"
+        "foot    foot    foot    foot"
+    ;
+    /* width: 100%; */
+    grid-template-rows: 50px 1fr 30px;
+
+}
+
+#head{
+    background-color: lightgoldenrodyellow;
+}
+
+#quote{
+    background-color: lightcoral;
+
+}
+
+#list{
+    background-color: lightblue;
+
+}
+
+section#entries{
+    background-color: lightgreen;
+}
+
+section#foot{
+    background-color: lightsalmon;
+}
