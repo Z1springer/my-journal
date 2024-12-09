@@ -1,3 +1,4 @@
+/* ============grid layout styles============= */
 html {
   height: 100%;
 }
@@ -86,8 +87,7 @@ body {
   background-image: linear-gradient(to right bottom, rgb(230, 0, 0), #ffedbca8);
 }
 
-/* =========================================== */
-
+/* =========navigation buttons styles========= */
 .btn {
   background-color: paleturquoise;
   border: none;
