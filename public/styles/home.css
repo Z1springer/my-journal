@@ -1,41 +1,45 @@
-header{
-    background-color: lightseagreen;
+body{
+    margin: 0;
+    padding: 0;
 }
 
-.section{
+#container{
+    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
     grid-template-areas: 
-        "head    head    head    head"
-        "quote   quote   quote   list"
-        "quote   quote   quote   list"
+        "head head head head"
+        "quote quote quote list"
+        "quote quote quote list"
         "entries entries entries list"
         "entries entries entries list"
-        "foot    foot    foot    foot"
+        "foot foot foot foot"
     ;
-    /* width: 100%; */
-    grid-template-rows: 50px 1fr 30px;
-
 }
 
 #head{
+    grid-area: head;
     background-color: lightgoldenrodyellow;
 }
 
 #quote{
+    grid-area: quote;
     background-color: lightcoral;
 
 }
 
 #list{
+    grid-area: list;
     background-color: lightblue;
-
 }
 
-section#entries{
+#entries{
+    grid-area: entries;
     background-color: lightgreen;
 }
 
-section#foot{
+#foot{
+    grid-area: foot;
     background-color: lightsalmon;
 }

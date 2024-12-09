@@ -12,14 +12,26 @@
         TODO: Container with options to view old entries, create a new entry, or view cute pictures of baby animals
         TODO: Container with a list of support websites
     -->
-        <section id="head" class="section">
+        <div id="container">
+            <section id="head" >
             <h1>My Journal</h1>
         </section>
-        <section id="quote" class="section"></section>
-        <section id="list" class="section"></section>
-        <section id="entries" class="section"></section>
-        <section id="foot" class="section">
+        <section id="quote" > 
+            <div id="inspo-quote-container">
+                <h3><span class="quote">Quote Here</h3>
+                <p id="author">Author Name Here</p>
+                <button class="next" onclick="getNewQuote()">Next quote</button>
+            </div>
+        </section>
+        <section id="list" ></section>
+        <section id="entries" >
+            <button type="button">Make New Journal Entry</button>
+            <button type="button">View Previous Entries</button>
+        </section>
+        <section id="foot">
             <h2>Footer goes here</h2>
         </section>
+        </div>
+        
 </body>
 </html>
