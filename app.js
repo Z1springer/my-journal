@@ -13,12 +13,16 @@ app.set("view engine", "ejs");
 
 //Default Route
 app.get("/", (req, res) => {
-    console.log("Hello World! Server!");
+  console.log("Hello World! Server!");
 
-    res.render("home");
-})
+  res.render("home");
+});
+
+app.get("/new-entry", (req, res) => {
+  res.render("new-entry");
+});
 
 //Connect to Server
 app.listen(PORT, () => {
-    console.log(`Server running on port http://localhost:${PORT}`);
-})
+  console.log(`Server running on port http://localhost:${PORT}`);
+});
