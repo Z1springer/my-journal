@@ -83,6 +83,8 @@ app.post("/new-entry", async (req, res) => {
 });
 
 app.get("/entry-confirm", (req, res) => {
+  const data = req.body;
+
   res.render("entry-confirm", { details: data });
 });
 
