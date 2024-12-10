@@ -1,4 +1,4 @@
-@media only screen and (max-width: 375px) {
+@media only screen and (width <= 375px) {
   html {
     background-color: #6d597a;
 
@@ -15,4 +15,21 @@
     padding-bottom: 0.5em;
     border-bottom: 5px solid #b56576;
   }
+}
+
+html {
+  background-color: #6d597a;
+
+  height: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 0.5em;
+  border-bottom: 5px solid #b56576;
 }
