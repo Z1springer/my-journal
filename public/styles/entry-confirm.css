@@ -1,0 +1,30 @@
+@media only screen and (max-width: 375px) {
+  html {
+    height: 100%;
+  }
+
+  body {
+    background-image: linear-gradient(#355070, #e56b6f);
+    font-family: "Outfit", sans-serif;
+  }
+
+  h1 {
+    padding-top: 5em;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  button {
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-self: center;
+    background-image: linear-gradient(#e56b6f, #355070);
+    padding: 1.5em 2em;
+    font-size: 15px;
+  }
+}

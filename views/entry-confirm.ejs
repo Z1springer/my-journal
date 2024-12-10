@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/entry-confirm.css" />
+    <!-- Imported Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>Your New Entry Has Been Successfully Logged <%= details.name %>!</h1>
+    <button id="returnHome" class="btn">
+      <a href="/">Return To Home Page</a>
+    </button>
   </body>
 </html>
