@@ -19,11 +19,11 @@
     <ul>
       <% for(let i = 0; i < data.length; i++) { %>
       <li>
-        <h4>Entry by: <%= data[i].name %></h4>
-        <h4>You were feeling: <%= data[i].feeling %></h4>
+        <h2>Entry by: <%= data[i].name %></h2>
+        <h3>You were feeling: <%= data[i].feeling %></h3>
         <p><%= data[i].newEntry %></p>
       </li>
-      <p>---------------------------------------</p>
+      <hr width="100%" size="3" color="#b56576" />
       <% } %>
     </ul>
     <% } else { %>
