@@ -1,5 +1,5 @@
 /* ============grid layout styles============= */
-/* html {
+html {
   height: 100%;
 }
 
@@ -19,53 +19,122 @@ body {
     "head head head head"
     "quote quote quote list"
     "quote quote quote list"
-    "entries entries entries list"
-    "entries entries entries list"
+    "entries entries entries entries"
+    "entries entries entries entries"
     "foot foot foot foot";
 }
 
 #head {
   grid-area: head;
   background-color: #355070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #head > h1 {
-  display: flex;
-  color: white;
-  font-size: 45px;
+  color: whitesmoke;
+  font-size: 4.5em;
   font-family: "Outfit", sans-serif;
-  justify-content: center;
+  margin: 0;
 }
 
 #quote {
   grid-area: quote;
-  background-color: #b56576;
+  background-image: linear-gradient(#355070, #6d597a);
   padding: 5em;
 }
 
 #quote h5 {
   font-family: "Outfit", sans-serif;
+  color: whitesmoke;
+  font-size: 2.5em;
 }
 
 #list {
   grid-area: list;
-  background-color: lightblue;
+  background-image: linear-gradient(#355070, #6d597a);
+  padding-right: 0.5em;
+}
+
+#list h2 {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 1.65em;
+  color: whitesmoke;
+}
+
+#list li {
+  padding-top: 1em;
+}
+
+#list li a {
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: whitesmoke;
 }
 
 #entries {
   grid-area: entries;
-  background-color: lightgreen;
+  background-image: linear-gradient(#6d597a, #b56576);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-areas:
+    "entry-head entry-head entry-head"
+    "new-entry prev-entries aminals";
+  justify-content: center;
+  gap: 10px;
+}
+
+#entries h2 {
+  grid-area: entry-head;
+  margin: 0.5em 1.7em;
+  font-size: 3em;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  color: whitesmoke;
+}
+
+#entries .btn {
+  background-image: linear-gradient(#355070, #6d597a);
+  border-radius: 0.8em;
+  height: 3em;
+  padding: 1em 1em;
+  margin: 0.1em 2.2em;
+  width: 15em;
+  font-size: 1.5em;
+}
+
+#entries a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#entries #new-entry {
+  grid-area: new-entry;
+}
+
+#entries #prev-entries {
+  grid-area: prev-entries;
+}
+
+#entries #aminals {
+  grid-area: aminals;
 }
 
 #foot {
   grid-area: foot;
-  background-color: lightsalmon;
-} */
+  background-image: linear-gradient(#b56576, #e56b6f);
+  text-align: center;
+  font-size: 10px;
+}
 
 /* ================quote styles=============== */
 
-/* #inspo-quote-container {
-  background-color: red;
+#inspo-quote-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,7 +148,7 @@ body {
 
 .quote {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.2em;
 }
 
 #author {
@@ -88,6 +157,7 @@ body {
   font-size: 1.5em;
   font-style: italic;
   font-family: cursive;
+  color: whitesmoke;
 }
 
 .next {
@@ -96,28 +166,9 @@ body {
   cursor: pointer;
   padding: 0.6em;
   margin-top: 0.3em;
-  color: white;
-  background-image: linear-gradient(to right bottom, rgb(230, 0, 0), #ffedbca8);
-} */
-
-/* =========navigation buttons styles========= */
-/* .btn {
-  background-image: linear-gradient(to right bottom, rgb(230, 0, 0), #ffedbca8);
-  border: none;
-  border-radius: 0.2em;
-  color: black;
-  padding: 0.1em 2em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5em;
+  color: whitesmoke;
+  background-image: linear-gradient(#355070, #6d597a);
 }
-
-.btn a {
-  text-align: center;
-  padding: 0.5em 0.5em;
-  color: white;
-} */
 
 @media only screen and (max-width: 375px) {
   html {
@@ -151,9 +202,10 @@ body {
   #head > h1 {
     display: flex;
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 35px;
     font-family: "Outfit", sans-serif;
     justify-content: center;
+    margin-bottom: 0;
   }
 
   #quote {
@@ -193,6 +245,7 @@ body {
     font-size: 1.5em;
     font-style: italic;
     font-family: cursive;
+    color: whitesmoke;
   }
 
   .next {
@@ -243,7 +296,7 @@ body {
 
   #entries > .btn {
     background-image: linear-gradient(#355070, #6d597a);
-    border-radius: 0.2em;
+    border-radius: 0.8em;
     padding: 0.5em 1em;
     margin: 0.1em 4.2em;
     width: 15em;
@@ -264,7 +317,6 @@ body {
 
   #foot p {
     font-size: 10px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
   }
 }
