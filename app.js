@@ -86,6 +86,14 @@ app.get("/entry-confirm", (req, res) => {
   res.render("entry-confirm", { details: data });
 });
 
+app.get("/prev-entries", async (req, res) => {
+  const conn = await connect();
+
+  const rows = await conn.query(`SELECT * FROM entrys;`);
+
+  res.render("prev-entries", { data: rows });
+});
+
 //Connect to Server
 app.listen(process.env.APP_PORT, () => {
   console.log(
