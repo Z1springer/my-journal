@@ -1,0 +1,63 @@
+@media only screen and (max-width: 375px) {
+  html {
+    height: 100%;
+  }
+
+  body {
+    background-color: #355070;
+    font-family: "Outfit", sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  #entry-form {
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "userName"
+      "userFeeling"
+      "userEntry"
+      "userEntry"
+      "btn";
+  }
+
+  #userName {
+    background-image: linear-gradient(to right bottom, #6d597a, #b56576);
+    grid-area: userName;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  #userFeeling {
+    background-image: linear-gradient(to right top, #6d597a, #b56576);
+    grid-area: userFeeling;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  #userEntry {
+    background-image: linear-gradient(#6d597a, #b56576);
+    grid-area: userEntry;
+  }
+
+  #userEntry textarea {
+    margin-top: 1em;
+    width: 24em;
+  }
+
+  #btn {
+    font-family: "Outfit", sans-serif;
+    color: whitesmoke;
+    grid-area: btn;
+    margin-top: 1.5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    height: 2.5em;
+    background-image: linear-gradient(#b56576, #6d597a);
+  }
+}

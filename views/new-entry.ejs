@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Journal Entry</title>
+    <link rel="stylesheet" href="/styles/new-entry.css" />
+    <!-- Imported Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- 
@@ -13,10 +21,12 @@
     <h1>Add To Your Journal</h1>
 
     <form id="entry-form" method="post" action="/new-entry">
-      <label> Name: <input type="text" name="name" </label>
+      <fieldset id="userName">
+        <label> Name: <input type="text" name="name" /> </label>
+      </fieldset>
 
-      <fieldset>
-        <legend>How are you feeling?</legend>
+      <fieldset id="userFeeling">
+        <label>Current Feeling: </label>
 
         <select id="feeling" name="feeling">
           <option value="none">-</option>
@@ -30,11 +40,13 @@
         </select>
       </fieldset>
 
-      <label for="new-entry">Type out Your Thoughs Here</label> <br />
+      <fieldset id="userEntry">
+        <label for="new-entry">Type out Your Thoughs Here</label> <br />
 
-      <textarea rows="15" id="new-entry" name="newEntry"></textarea> <br />
+        <textarea rows="10" id="new-entry" name="newEntry"></textarea> <br />
+      </fieldset>
 
-      <button type="submit">Confirm Entry</button>
+      <button type="submit" id="btn">Confirm Entry</button>
     </form>
   </body>
 </html>
