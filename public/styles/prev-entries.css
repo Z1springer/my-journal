@@ -1,0 +1,16 @@
+@media only screen and (max-width: 375px) {
+  html {
+    background-color: #6d597a;
+
+    height: 100%;
+  }
+
+  body {
+    font-family: "Outfit", sans-serif;
+    color: whitesmoke;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
